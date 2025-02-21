@@ -8,7 +8,7 @@ export const server = {
 			firstName: z.string().min(1),
 		}),
 		handler: async (data) => {
-			return true;
+			return data.firstName;
 		},
 	}),
 };

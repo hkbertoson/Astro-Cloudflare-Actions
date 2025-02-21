@@ -50,6 +50,7 @@ import Layout from '../layouts/Layout.astro';
 		const {data} = await actions.contactForm(formData);
 
 		if (data) {
+			alert(`You submitted ${data}`);
 			form.reset();
 		}
 	});
